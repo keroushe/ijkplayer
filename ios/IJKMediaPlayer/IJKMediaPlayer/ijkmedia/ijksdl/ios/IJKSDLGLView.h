@@ -29,7 +29,7 @@
 @interface IJKSDLGLView : UIView <IJKSDLGLViewProtocol>
 
 - (id) initWithFrame:(CGRect)frame;
-//- (void) display: (SDL_VoutOverlay *) overlay;
+- (void) display: (void *) overlay;
 
 - (UIImage*) snapshot;
 - (void)setShouldLockWhileBeingMovedToWindow:(BOOL)shouldLockWhiteBeingMovedToWindow __attribute__((deprecated("unused")));
