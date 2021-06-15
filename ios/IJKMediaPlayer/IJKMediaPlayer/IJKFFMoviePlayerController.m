@@ -317,7 +317,7 @@ void IJKFFIOStatCompleteRegister(void (*cb)(const char *url,
         ijkmp_set_option_int(_mediaPlayer, IJKMP_OPT_CATEGORY_PLAYER, "start-on-prepared", _shouldAutoplay ? 1 : 0);
 
         self.shouldShowHudView = options.showHudView;
-        glView.isThirdGLView = YES;
+        glView.isThirdGLView = NO;
         _view = _glView = (IJKSDLGLView *)glView;
         _hudViewController = [[IJKSDLHudViewController alloc] init];
         [_hudViewController setRect:_glView.frame];
